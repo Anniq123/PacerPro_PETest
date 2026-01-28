@@ -1,0 +1,24 @@
+# ================================================================
+# Sumo Logic Query for /api/data Endpoint Response Time Alert
+# ================================================================
+
+# Author: Anniq Suha
+# Date: Jan2026
+# Description:
+# This query identifies log entries where the response time of the '/api/data'
+# endpoint exceeds 3 seconds. 
+
+
+###QUERY###  
+
+# "/api/data"
+# | where responseTime
+
+
+
+
+
+#Explanation of code
+#1. "/api/data" refers to the end point, so this will filter logs to only look for this endpoint
+#2. "|" this pipe is passing the filtered logs to the next step
+#3. "where responseTime > 3000  is filtering logs to where the field responseTime is greater than 3000
